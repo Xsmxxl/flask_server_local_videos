@@ -1,0 +1,5 @@
+PARA CREAR VIRTUALENV: virtualenv env
+PARA INICIAR VIRTUALENV: .\env\Scripts\activate.bat
+PARA GUARDAR: python -m pip freeze > requirements.txt
+PARA INSTALAR: python -m pip install -r requirements.txt
+PARA HACER UPGRAPE A PIP: python -m pip install --upgrape pip
