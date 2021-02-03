@@ -6,7 +6,7 @@ if sys.platform == 'win32':
     os.system('cls')
 elif sys.platform == 'linux':
     os.system('clear')
-    
+
 data = os.listdir(os.getcwd())
 contador = 0
 encontrador = []
@@ -28,5 +28,9 @@ for i in range(len(data)):
             contador += 1
             ultimo_numero.append(int(re.findall("^video+\w+", data[i])[0][5:]))
 for encontrado in encontrador:
-    contador = max(ultimo_numero)+1
-    os.rename(data[encontrado], "video{}.webm".format(contador))
+    if len(ultimo_numero):
+        contador = max(ultimo_numero)+1
+        os.rename(data[encontrado], "video{}.webm".format(contador))
+    else:
+        os.rename(data[(i+1)], "video{}.webm".format((i+1)))
+            
