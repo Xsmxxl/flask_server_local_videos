@@ -2,13 +2,13 @@
  Servidor local en flask para ver video
  
  -flask_server_local_videos
-   -- static
-   -- templates
-   -- app.py
-   -- cert.pem
-   -- GUARDAR O INSTALAR REQUIREMENTS
-   -- key.pem
-   -- requirements.txt
+   - static
+   - templates
+   - app.py
+   - cert.pem
+   - GUARDAR O INSTALAR REQUIREMENTS
+   - key.pem
+   - requirements.txt
 
  
  Para utilizar debes seguir los siguientes pasos:
